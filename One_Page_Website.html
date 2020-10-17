@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Happy's Ramen | Noodle Bar</title>
+		<meta charset="utf-8">
+		<link rel="Stylesheet" type="text/css" href="CSS/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+		<!-- NAV -->
+		<div>
+			<div>
+				<ul>
+					<a href="#Home" id="link">HOME</a>
+					<a href="#Gallery" id="link">GALLERY</a>
+					<a href="#Reservations" id="link">RESERVATIONS</a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id="Home">
+			<div>
+				<div>
+					<span>Happy's Ramen</span>
+				</div>
+			</div>
+		</div>
+		<!-- End HOME -->
+		
+		<!-- GALLERY -->
+			<div id="Gallery">
+				<h1>Gallery</h1>
+			<!-- Images to open light box -->
+				<div class="row">
+					<!-- PHOTO-CONTAINER 1-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_1.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(1)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+					<!-- PHOTO-CONTAINER 2-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_2.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+					<!-- PHOTO-CONTAINER 3-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_3.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+					<!-- PHOTO-CONTAINER 4-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_4.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(4)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+					<!-- PHOTO-CONTAINER 5-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_5.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(5)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+					<!-- PHOTO-CONTAINER 6-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_6.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(6)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+					<!-- PHOTO-CONTAINER 7-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_7.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(7)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+					<!-- PHOTO-CONTAINER 8-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_8.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(8)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+					<!-- PHOTO-CONTAINER 9-->
+						<div class="column">
+							<img src="./Images/Thumb/Ramen_Thumb_9.jpg" alt="Uh oh where's the ramen?" onclick="openModal();currentSlide(9)" class="hover-shadow">
+						</div>
+					<!-- END_PHOTOCONTAINER -->
+				</div>
+			</div>
+		<!-- ENG GALLERY -->
+		
+		<!-- Modal Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_1.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">2 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_2.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">3 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_3.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">4 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_4.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_5.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_6.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_7.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_8.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">9 / 9</div>
+				<img src="./Images/Thumb/Ramen_Thumb_9.jpg" alt="Yummy Ramen" style="width: 100%;">
+			</div>
+
+		<!-- Next Prev controls-->
+			<a onclick="plusSlides(-1)" class="prev">&#10094;</a>
+			<a onclick="plusSlides(1)" class="next">&#10095;</a>
+
+		<!-- Caption text -->
+			<div class="caption-container">
+				<p class="captionText"></p>
+			</div>
+
+		<!-- Thumbnail image controls -->
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_1.jpg" alt="Noodles" class="demo">
+			</div>
+
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_2.jpg" alt="Noodles" class="demo">
+			</div>
+
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_3.jpg" alt="Noodles" class="demo">
+			</div>
+
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_4.jpg" alt="Noodles" class="demo">
+			</div>
+
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_5.jpg" alt="Noodles" class="demo">
+			</div>
+
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_6.jpg" alt="Noodles" class="demo">
+			</div>
+
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_7.jpg" alt="Noodles" class="demo">
+			</div>
+
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_8.jpg" alt="Noodles" class="demo">
+			</div>
+
+			<div class="column">
+				<img src="Images/Thumb/Ramen_Thumb_9.jpg" alt="Noodles" class="demo">
+			</div>
+		</div>
+	</div>
+		<!-- TABLE RESERVATIONS -->
+		<section>
+			<div id="Reservations">
+				<div>
+					<h1>Reservations</h1>
+					<div>
+						<h2><span>Nothing like knowing noodles are in your future<span>
+							<br />Reserve your table now!
+						</h2>
+						<p>
+							Please provide us with your contact informations for confirmation calls.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="reservation" type="text" value="First Name">
+								<input class="reservation" type="text" value="Last Name">
+								<input class="reservation" type="text" value="Phone Number">
+								<input class="reservation" type="email" value="Email">
+								<input class="reservation" type="text" value="seating preference"> <!-- would like to make check boxes with indoor and outdoor as options -->
+								<div class="Form Spacer" >
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			<div>
+		</section>
+		<!-- END RESERVATION -->
+		
+		<!-- FOOTER -->
+		<div>
+			<em>www.happynoodlebar.com &nbsp;|&nbsp; &copy; 2020</em>
+		</div>
+		<!-- END FOOTER -->
+		
+	</body>
+</html>
+	
